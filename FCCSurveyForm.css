@@ -1,0 +1,104 @@
+body {
+    background: url(https://res-console.cloudinary.com/dqig1x5fi/thumbnails/v1/image/upload/v1558042167/dHJvcGljYWxiYWNrZ3JvdW5kX3c4aGU5Zg==/preview);
+}
+
+.jumbotron-fluid {
+    height: 15rem;
+}
+.jumbotron, .footer {
+    background:#4ead7a;
+    color: #093a1f;
+    font-family: 'Pacifico', cursive;
+}
+
+.container {
+    width: 55%;
+}
+
+#survey-form {
+    border: 3px solid #4ead7a;
+    color: #093a1f;
+    border-radius: 5%;
+    background:#f9f4f6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text-area {
+    height:7rem;
+    width: 18rem;
+    border: 1px solid #4ead7a;   
+}
+
+#name, #email, #number, #other, #dropdown {
+    border: 1px solid #4ead7a;  
+    font-size: .8rem;
+    padding: .25rem;
+}
+
+#submit {
+    border: 2px solid #093a1f;
+    border-radius: 6%;
+}
+button:hover {
+    background:lightpink;
+    cursor:pointer;
+    color:white;
+}
+
+#dropdown:hover {
+    background: #4ead7a;
+    color:white;
+}
+
+input:hover {
+    background: #4ead7a;
+    color:white;
+}
+
+textarea:hover {
+    background: #4ead7a;
+    color:white;
+}
+
+/*phones and portrait tablet*/
+
+@media (min-width:500px) and (max-width: 768px) {
+    h1 {
+      font-size: 1.75rem;
+      padding-top:4rem;
+    }
+    hr {
+        display:none;
+    }
+    .fas {
+        display:none;
+    }
+    #survey-form {
+        font-size: .85rem;
+    }
+    .container {
+        width: 75%;
+    }
+  }
+/*landscape tablet*/
+
+  @media (min-width: 769px) and (max-width:1199px) {
+    h1 {
+      font-size: 2rem;
+      margin-bottom:2rem;
+    }
+    .container {
+        width: 60%;
+  }
+  .fas {
+      display:none;
+  }
+  }
+
+  /*desktop*/
+
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+  }

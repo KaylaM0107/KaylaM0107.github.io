@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <title>Survey Form</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="FCCSurveyForm.css">
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid align-items-center">
+        <div class="container text-center">
+            <h1 id="title"><i class="fas fa-globe-africa mr-5"></i>Getaway Vacations Survey<i class="fas fa-plane-departure ml-5"></i></h1>
+            <hr class="mt-3">
+            <p id="description" class="py-3">Tell us about your stay!</p>
+                </div>
+              </div>
+
+    
+<div class="container">
+  <div class="row h-100">
+    <form id="survey-form" class="col-12 py-3 my-3 mb-4 text-center">
+        <label for="name" id="name-label">*What is your name?:</label>
+          <input type="text" id="name" placeholder="First and last name" required><br><br>
+        <label for="email" id="email-label">*What is your email address?:</label>
+          <input type="email" id="email" placeholder="youremail@example.com" required><br><br>
+        <label for="number" id="number-label">Age:</label>
+          <input type="number" id="number" placeholder="18" max="100" min="18"><br><br>
+
+          <label for="dropdown">What was your reason for staying with us?</label>
+          <select name="reason" id="dropdown">
+              <option value="Family trip">Family trip</option>
+              <option value="Romantic/couples">Romantic/couples getaway</option>
+              <option value="Business">Business trip</option>
+              <option value="Solo">Solo adventure</option>
+              <option value="Kids">I hate my children</option>
+           </select><br><br>
+
+          
+          <label for="favorite">What was your favorite part of your experience?</label><br>
+           <input type="radio" id="radio" name="favorite" value="Hotel"> Hotel<br>
+           <input type="radio" name="favorite" value="Dining"> Restaurants/Dining<br>
+           <input type="radio" name="favorite" value="Fun"> Activities<br>
+           <input type="radio" name="favorite" value="Culture"> Local culture<br>
+           <input type="radio" name="favorite" value="None"> I didn't like anything<br><br>
+          
+
+          <label for="change">Is there anything you'd change?:</label><br>
+           <input type="checkbox" name="change" value="Accomodations"> Accomodations <br>
+           <input type="checkbox" name="change" value="Flights"> Flight Experience <br>
+           <input type="checkbox" name="change" value="Price"> Pricing <br>
+           <input type="checkbox" name="change" value="staff"> Staff <br>
+           <input type="checkbox" name="change" value="Other"> Other <br><br>
+
+        <label for="other" name="other">If other, please explain:</label>
+           <input type="text" id="other" placeholder="What's on your mind?"><br><br>
+
+        <label for="textarea">Anything else to add?:</label><br><br>
+           <textarea class="text-area"></textarea><br><br>
+
+         <button type="submit" id="submit" class="button mb-2">Submit your Survey!</button>  
+    </form>
+    </div>
+  </div>
+
+
+
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
